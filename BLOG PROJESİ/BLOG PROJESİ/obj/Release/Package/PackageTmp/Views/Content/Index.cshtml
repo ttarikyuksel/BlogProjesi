@@ -1,0 +1,12 @@
+﻿@using EntityLayer.Concrete
+@model List<Content>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <p>@item.ContentValue</p>
+}
+
